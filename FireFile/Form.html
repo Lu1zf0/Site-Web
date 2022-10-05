@@ -10,23 +10,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap" rel="stylesheet">
 </head>
 <body class="wall">
-    <div class="tonel" style="height: 520px;">
+    <div class="tonel dadoscadastro" style="height: 520px;">
         <p style="font-size: 30px;">Cadastro</p>
         <p> Nome </p>
-        <input type="text"><hr>
+        <input type="text" id="nomecadastro"><hr>
 
         <p> Email </p>
-        <input type="text" id="email"><hr>
+        <input type="text" id="emailcadastro"><hr>
 
         <p type="password"> Senha </p>
-        <input type="password" id="senha"><hr>
+        <input type="password" id="senhacadastro"><hr>
 
         <p>Confirmar senha </p>
-        <input type="password"><hr>
+        <input type="password" id="senhacadastroconfirm"><hr>
         
         <div class="subtonel" style="position: relative; right: -40px;">
-           <a href="Login.html "> <button> Cadastrar </button> </a>
+           <a> <button type="button" onclick="cadastro()"> Cadastrar </button> </a>
+           <button type="button" onclick="limpar()"></button>
         </div>
+        
     </div>
+
+    <script src="../senhalogin.js"></script>
 </body>
 </html>
