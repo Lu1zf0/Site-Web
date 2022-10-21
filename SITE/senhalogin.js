@@ -17,19 +17,6 @@ var dados = JSON.parse(localStorage.getItem("dadoscadastro"));
 
 function cadastro(){
 
-    // if(dados == null){
-    //     localStorage.setItem("dadoscadastro", "[]");
-    //     dados = [];
-    // }
-
-    // var registro = {
-    //     nome: nomecadastro.value,
-    //     email: emailcadastro.value,
-    //     senha: senhacadastro.value,
-    // }
-
-    // dados.push(registro);
-
     if(senhacadastro.value != senhacadastroconfirm.value){
         alert("Senhas incompatíveis")
     } else{     
