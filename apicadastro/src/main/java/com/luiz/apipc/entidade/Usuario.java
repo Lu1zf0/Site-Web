@@ -1,4 +1,4 @@
-package com.jociel.apicadastro.entidade;
+package com.luiz.apipc.entidade;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
