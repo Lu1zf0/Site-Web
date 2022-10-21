@@ -1,4 +1,4 @@
-package com.luiz.apipc.entidade;
+package com.note.book.entidade;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
