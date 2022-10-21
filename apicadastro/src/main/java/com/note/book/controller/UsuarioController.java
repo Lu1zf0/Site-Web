@@ -18,5 +18,36 @@ public class UsuarioController {
     public List<Usuario> listaUsuarios(){
         return (List<Usuario>)acessoBanco.findAll();
     }
+
+    @GetMapping("/usuario/{id}")
+    public Optional<Usuario> peguePorId(@PathVariable int id){
+        return acessoBanco.findById(id);
+    }
+
+    @PostMapping("/cadastrar")
+    public void cadastrar(@RequestBody Usuario NovoUsuario){
+        acessoBanco.save(NovoUsuario);
+    }
+
+    @PutMapping("/alterar/{id}") 
+    public void alterar(@PathVariable int id, @RequestBody Usuario usuario){ // PathVariable - Variável de caminho; ResquestBody - Corpo de Solicitação
+        acessoBanco.findById(id).map(u ->{
+            u.setNome(usuario.getNome());
+            u.setUsuario(usuario.getUsuario());
+            u.setEmail(usuario.getEmail());
+            u.setEmail(usuario.getSenha());
+            return acessoBanco.save(u);
+        });
+    }
+
+    @PutMapping("/alterar")
+    public void alterarUsuario(@PathVariable int id){
+        acessoBanco.deleteById(id);
+    }
+
+    @DeleteMapping("/deletar/{id}")
+    public void deletarUsuario(@PathVariable int id){
+        acessoBanco.deleteById(id);
+    }
     
 }
