@@ -35,7 +35,7 @@ function cadastro(){
         alert("Senhas incompatíveis")
     } else{
         localStorage.setItem("dadoscadastro", JSON.stringify(dados));
-        window.location.href = "/index.html"
+        window.location.href = "../index.html"
     }
 
     fetch("http://localhost:8081/cadastrar", {
