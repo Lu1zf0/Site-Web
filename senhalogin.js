@@ -10,6 +10,21 @@ function login(){
 }
 
 function cadastro(){
+
+    fetch("http://localhost:8081.com/cadastrar/", {
+        method: "post",
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+      
+        body: JSON.stringify({
+            
+        })
+      })
+      .then( (response) => { 
+      });
+
     var nomecadastro = document.getElementById('nomecadastro');
     var emailcadastro = document.getElementById('emailcadastro');
     var senhacadastro = document.getElementById('senhacadastro');
