@@ -9,6 +9,11 @@ function login(){
     }
 }
 
+    var nomecadastro = document.getElementById('nomecadastro');
+    var emailcadastro = document.getElementById('emailcadastro');
+    var senhacadastro = document.getElementById('senhacadastro');
+    var senhacadastroconfirm = document.getElementById('senhacadastroconfirm');
+
 function cadastro(){
 
     fetch("http://localhost:8081.com/cadastrar/", {
@@ -19,16 +24,15 @@ function cadastro(){
         },
       
         body: JSON.stringify({
-            
+            nome : nomecadastro,
+            email : emailcadastro,
+            senha : senhacadastro,
         })
       })
       .then( (response) => { 
       });
 
-    var nomecadastro = document.getElementById('nomecadastro');
-    var emailcadastro = document.getElementById('emailcadastro');
-    var senhacadastro = document.getElementById('senhacadastro');
-    var senhacadastroconfirm = document.getElementById('senhacadastroconfirm');
+    
 
     var dados = JSON.parse(localStorage.getItem("dadoscadastro"));
 
