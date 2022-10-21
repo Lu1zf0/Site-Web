@@ -9,11 +9,11 @@ function login(){
     }
 }
 
-const nomecadastro = document.getElementById('nomecadastro');
-const emailcadastro = document.getElementById('emailcadastro');
-const senhacadastro = document.getElementById('senhacadastro');
-const senhacadastroconfirm = document.getElementById('senhacadastroconfirm');
-const dados = JSON.parse(localStorage.getItem("dadoscadastro"));
+var nomecadastro = document.getElementById('nomecadastro');
+var emailcadastro = document.getElementById('emailcadastro');
+var senhacadastro = document.getElementById('senhacadastro');
+var senhacadastroconfirm = document.getElementById('senhacadastroconfirm');
+var dados = JSON.parse(localStorage.getItem("dadoscadastro"));
 
 function cadastro(){
 
