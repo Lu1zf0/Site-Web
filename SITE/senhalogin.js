@@ -54,7 +54,9 @@ function cadastro(){
     }).then(function (res) {console.log(res)})
       .catch(function(res){console.log(res)})
 
-}
+        localStorage.setItem("dadoscadastro", JSON.stringify(dados));
+        window.location.href = "SITE/index.html"
+    }
 
 function limpar(){
     localStorage.clear();
