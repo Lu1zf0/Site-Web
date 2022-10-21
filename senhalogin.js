@@ -9,10 +9,10 @@ function login(){
     }
 }
 
-var nomecadastro = document.getElementById('nomecadastro');
-var emailcadastro = document.getElementById('emailcadastro');
-var senhacadastro = document.getElementById('senhacadastro');
-var senhacadastroconfirm = document.getElementById('senhacadastroconfirm');
+const nomecadastro = document.getElementById('nomecadastro');
+const emailcadastro = document.getElementById('emailcadastro');
+const senhacadastro = document.getElementById('senhacadastro');
+const senhacadastroconfirm = document.getElementById('senhacadastroconfirm');
 
 function cadastro(){
 
@@ -28,9 +28,9 @@ function cadastro(){
             email : emailcadastro.value,
             senha : senhacadastro.value,
         })
-      })
-      .then( (response) => { 
-      });
+    }).then(function (res) {console.log(res)})
+      .catch(function(res){console.log(res)})
+  
 
     
 
