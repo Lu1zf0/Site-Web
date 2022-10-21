@@ -22,11 +22,11 @@ function cadastro(){
     //     dados = [];
     // }
 
-    var registro = {
-        nome: nomecadastro.value,
-        email: emailcadastro.value,
-        senha: senhacadastro.value
-    }
+    // var registro = {
+    //     nome: nomecadastro.value,
+    //     email: emailcadastro.value,
+    //     senha: senhacadastro.value,
+    // }
 
     // dados.push(registro);
 
@@ -38,7 +38,7 @@ function cadastro(){
     }
 
     fetch("http://localhost:8081/cadastrar", {
-        method: "POST",
+        method: 'POST',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
