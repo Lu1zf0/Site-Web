@@ -34,7 +34,7 @@ function cadastro(){
                 senha : senhacadastro.value,
                 usuario: usuariocadastro.value
             })
-        }).then(function (res) {console.log(res)})
+        }).then(function(res){console.log(res)})
           .catch(function(res){console.log(res)})
     
             localStorage.setItem("dadoscadastro", JSON.stringify(dados));
